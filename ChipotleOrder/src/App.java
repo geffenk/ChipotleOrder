@@ -7,6 +7,9 @@ public class App {
     public static int numberOfBurritos = 0;
     public static int numberOfTacos = 0;
     public static int numberOfBowls = 0;
+    public static Bowl[] bagBowl = new Bowl[3];
+    public static Taco[] bagTaco = new Taco[3];
+    public static Burrito[] bagBurrito = new Burrito[3];
     public static void main(String[] args) throws Exception {
         while (pos!=100){
             if (pos == 0){
@@ -24,8 +27,81 @@ public class App {
             if (pos == 4){
                 pos = createBowl();
             }
+            if (pos == 5){
+                pos = whatNext();
+            }
+            if (pos == 6){
+                pos = whichTypeNext();
+            }
+            if (pos == 7){
+                pos = editWhatType();
+            }
         }
         
+    }
+    public static int editWhatType(){
+        int done = 0;
+        while (done != 100){
+            System.out.println("would you like to edit one of your burritos, tacos, or bowls?");
+            input = in.nextLine().toLowerCase();
+            if (input.indexOf("end")!= -1){
+                return 100;
+            }
+            else if (input.indexOf("burrito")!= -1){
+                return 9;
+            }
+            else if (input.indexOf("taco")!= -1){
+                return 10;
+            }
+            else if (input.indexOf("burrito")!= -1){
+                return 11;
+            }
+            misunderstand();
+        }
+        return 100;
+    }
+    public static int whichTypeNext(){
+        int done = 0;
+        while (done != 100){
+            System.out.println("Which type would you like to order next? burrito, taco, or bowl?");
+            input = in.nextLine().toLowerCase();
+            if (input.indexOf("end")!= -1){
+                return 100;
+            }
+            else if (input.indexOf("burrito")!= -1){
+                return 2;
+            }
+            else if (input.indexOf("taco")!= -1){
+                return 3;
+            }
+            else if (input.indexOf("burrito")!= -1){
+                return 4;
+            }
+            misunderstand();
+        }
+        return 100;
+    }
+    public static int whatNext(){
+        System.out.println("You currently have selected " + numberOfBowls + " Bowls, " + numberOfTacos + " Tacos, and " + numberOfBurritos+ " Burritos.");
+        int done = 0;
+        while (done != 100){
+            System.out.println("What would you like to do next? Order a new burrito, taco, or bowl? Edit one you already have selected? Or place your order? Type \"new\" for a new item, \"edit\" to edit an item, or \"place\" to place your order");
+            input = in.nextLine().toLowerCase();
+            if (input.indexOf("end") != -1){
+                return 100;
+            }
+            else if (input.indexOf("new")!= -1){
+                return 6;
+            }
+            else if (input.indexOf("edit") != -1){
+                return 7;
+            }
+            else if (input.indexOf("place")!= -1){
+                return 8;
+            }
+            misunderstand();
+        }
+        return 100;
     }
     public static int createBowl(){
         int done = 0;
@@ -35,7 +111,10 @@ public class App {
         String fourthTopping = "";
         String fifthTopping = "";
         String meat = "";
-        numberOfBowls++;
+        if (numberOfBowls >2){
+            System.out.println("You have already selected 3 bowls. You are fat enough. You are being redirected to do another action.");
+            return 5;
+        }
         while (done!=50){
             System.out.println("What meat would you like on your Bowl? We have chicken, steak, and pork. You are only allowed one meat.");
             input = in.nextLine().toLowerCase();
@@ -139,7 +218,7 @@ public class App {
                 done = 10;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
+                secondTopping = "no topping";
                 done = 10;
             }
             else misunderstand();
@@ -183,7 +262,7 @@ public class App {
                 done = 20;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
+                thirdTopping = "no topping";
                 done = 20;
             }
             else misunderstand();
@@ -227,8 +306,8 @@ public class App {
                 done = 0;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
-                done = 20;
+                fourthTopping = "no topping";
+                done = 0;
             }
             else misunderstand();
         }
@@ -271,13 +350,14 @@ public class App {
                 done = 10;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
-                done = 20;
+                fifthTopping = "no topping";
+                done = 10;
             }
             else misunderstand();
         }
         System.out.println("You have chosen " + fifthTopping + " as your final topping.");
-        Bowl firstBurrito = new Bowl(meat, firstTopping, secondTopping, thirdTopping, fourthTopping, fifthTopping);
+        bagBowl[numberOfBowls] = new Bowl(meat, firstTopping, secondTopping, thirdTopping, fourthTopping, fifthTopping);
+        numberOfBowls++;
         System.out.println("You have selected a bowl with " + meat + ", " + firstTopping + ", " + secondTopping + ", " + thirdTopping+ ", " + fourthTopping + ", and " + fifthTopping);
         return 5;
     }
@@ -289,7 +369,10 @@ public class App {
         String fourthTopping = "";
         String fifthTopping = "";
         String meat = "";
-        numberOfTacos++;
+        if (numberOfTacos >2){
+            System.out.println("You have already selected 3 tacos. You are fat enough. You are being redirected to do another action.");
+            return 5;
+        }
         while (done!=50){
             System.out.println("What meat would you like on your Taco? We have chicken, steak, and pork. You are only allowed one meat.");
             input = in.nextLine().toLowerCase();
@@ -393,7 +476,7 @@ public class App {
                 done = 10;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
+                secondTopping = "no topping";
                 done = 10;
             }
             else misunderstand();
@@ -437,7 +520,7 @@ public class App {
                 done = 20;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
+                thirdTopping = "no topping";
                 done = 20;
             }
             else misunderstand();
@@ -481,8 +564,8 @@ public class App {
                 done = 0;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
-                done = 20;
+                fourthTopping = "no topping";
+                done = 0;
             }
             else misunderstand();
         }
@@ -525,13 +608,14 @@ public class App {
                 done = 10;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
-                done = 20;
+                fifthTopping = "no topping";
+                done = 10;
             }
             else misunderstand();
         }
         System.out.println("You have chosen " + fifthTopping + " as your final topping.");
-        Taco firstTaco = new Taco(meat, firstTopping, secondTopping, thirdTopping, fourthTopping, fifthTopping);
+        bagTaco[numberOfTacos] = new Taco(meat, firstTopping, secondTopping, thirdTopping, fourthTopping, fifthTopping);
+        numberOfTacos++;
         System.out.println("You have selected a Taco with " + meat + ", " + firstTopping + ", " + secondTopping + ", " + thirdTopping+ ", " + fourthTopping + ", and " + fifthTopping);
         return 5;
     }
@@ -543,7 +627,10 @@ public class App {
         String fourthTopping = "";
         String fifthTopping = "";
         String meat = "";
-        numberOfBurritos++;
+        if (numberOfBurritos >2){
+            System.out.println("You have already selected 3 burritos. You are fat enough. You are being redirected to do another action.");
+            return 5;
+        }
         while (done!=50){
             System.out.println("What meat would you like on your Burrito? We have chicken, steak, and pork. You are only allowed one meat.");
             input = in.nextLine().toLowerCase();
@@ -647,7 +734,7 @@ public class App {
                 done = 10;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
+                secondTopping = "no topping";
                 done = 10;
             }
             else misunderstand();
@@ -691,7 +778,7 @@ public class App {
                 done = 20;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
+                thirdTopping = "no topping";
                 done = 20;
             }
             else misunderstand();
@@ -735,8 +822,8 @@ public class App {
                 done = 0;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
-                done = 20;
+                fourthTopping = "no topping";
+                done = 0;
             }
             else misunderstand();
         }
@@ -779,13 +866,14 @@ public class App {
                 done = 10;
             }
             else if (input.indexOf("no") != -1){
-                firstTopping = "no topping";
-                done = 20;
+                fifthTopping = "no topping";
+                done = 10;
             }
             else misunderstand();
         }
         System.out.println("You have chosen " + fifthTopping + " as your final topping.");
-        Burrito firstBurrito = new Burrito(meat, firstTopping, secondTopping, thirdTopping, fourthTopping, fifthTopping);
+        bagBurrito[numberOfBurritos] = new Burrito(meat, firstTopping, secondTopping, thirdTopping, fourthTopping, fifthTopping);
+        numberOfBurritos++;
         System.out.println("You have selected a burrito with " + meat + ", " + firstTopping + ", " + secondTopping + ", " + thirdTopping+ ", " + fourthTopping + ", and " + fifthTopping);
         return 5;
     }
