@@ -21,10 +21,19 @@ public class App {
                 pos = Utility.whatNext();
             }
             if (pos == 6){
-                pos = Utility.whichTypeNext();
+                pos = Utility.whichTypeOrderNext();
             }
             if (pos == 7){
                 pos = Utility.editWhatType();
+            }
+            if (pos == 9){
+                pos = Utility.editBowl();
+            }
+            if (pos == 10){
+                pos = Utility.editTaco();
+            }
+            if (pos == 11){
+                pos = Utility.editBurrito();
             }
         }
         

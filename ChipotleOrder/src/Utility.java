@@ -21,9 +21,69 @@ public class Utility {
             System.out.println("You currently have " + numberOfBowls + " bowls. which would you like to edit? 1, 2, or 3.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("1") != -1 || input.indexOf("first") != -1){
-                
+                editCertainBowl(1);
+                return 5;
+            }
+            else if (input.indexOf("2") != -1|| input.indexOf("second") != -1){
+                if (numberOfBowls>1){
+                    editCertainBowl(2);
+                    return 5;
+                }
+                else System.out.println("You have not selected 2 bowls, you will be asked to choose a different bowl");
+            }
+            else if (input.indexOf("3") != -1|| input.indexOf("third") != -1){
+                if (numberOfBowls>2){
+                    editCertainBowl(3);
+                    return 5;
+                }
+                else System.out.println("You have not selected 2 bowls, you will be asked to choose a different bowl");
             }
         }
+        return 100;
+    }
+    public static void editCertainBowl(int num){
+        int done = 0;
+        while (done != 100){
+            System.out.println("What would you like to edit? Meat, topping 1, 2, 3, 4, or 5?");
+            input = in.nextLine().toLowerCase();
+            if (input.contains("meat")){
+                System.out.println("what would you like to change your meat to? We have chicken, beef, or pork");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("chicken")){
+                    bagBowl[num].setMeat("chicken");
+                }
+                else if (input.contains("beef")){
+                    bagBowl[num].setMeat("beef");
+                }
+                else if (input.contains("pork")){
+                    bagBowl[num].setMeat("pork");
+                }
+                else System.out.println("you did not pick a valid meat");
+                System.out.println("Would you like to continue editing this Burrito?");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("no")){
+                    done = 100;
+                }
+                else if (input.contains("yes")){
+                }
+                else {
+                    System.out.println("you did not input a valid response so you are being redirected");
+                    done = 100;
+                }
+            }
+            else if (input.contains("1") || input.contains("first")){
+                System.out.println("What would you like to change your topping to? We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping.");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("bean")){
+                    bagBowl[num].setTopping1("beans");
+                }
+            }
+        }
+    }
+    public static int editTaco(){
+        return 100;
+    }
+    public static int editBurrito(){
         return 100;
     }
     public static int editWhatType(){
@@ -34,7 +94,7 @@ public class Utility {
             if (input.indexOf("end")!= -1){
                 return 100;
             }
-            else if (input.indexOf("burrito")!= -1){
+            else if (input.indexOf("bowl")!= -1){
                 return 9;
             }
             else if (input.indexOf("taco")!= -1){
@@ -47,7 +107,7 @@ public class Utility {
         }
         return 100;
     }
-    public static int whichTypeNext(){
+    public static int whichTypeOrderNext(){
         int done = 0;
         while (done != 100){
             System.out.println("Which type would you like to order next? burrito, taco, or bowl?");
