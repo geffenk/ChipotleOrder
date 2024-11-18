@@ -35,6 +35,16 @@ public class App {
             if (pos == 11){
                 pos = Utility.editBurrito();
             }
+            if (pos == 8){
+                pos = Utility.doYouWantToPlace();
+            }
+            if (pos ==15){
+                pos = Utility.inputName();
+            }
+            if (pos == 20){
+                pos = Utility.getLocation();
+            }
+
         }
         
     }

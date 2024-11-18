@@ -10,7 +10,30 @@ public class Utility {
     public static Bowl[] bagBowl = new Bowl[3];
     public static Taco[] bagTaco = new Taco[3];
     public static Burrito[] bagBurrito = new Burrito[3];
-    
+    public static String  name = "";
+
+    public static int getLocation(){
+        return 100;
+    }
+    public static int inputName(){
+        System.out.println("We need a name for the order. What is your name?");
+        name = in.nextLine();
+        return 20;
+    }
+    public static int doYouWantToPlace(){
+        System.out.println("You have currently selected " + numberOfBowls + " bowls, " + numberOfBurritos + " burritos, " + numberOfTacos + " Tacos. Would you like to place your order?");
+        input = in.nextLine().toLowerCase();
+        if (input.contains("y")){
+            return 15;
+        }
+        else if (input.contains("no")){
+            return 5;
+        }
+        else {
+            System.out.println("You didn't input a valid response. You are being redirected");
+            return 5;
+        }
+    }
     public static int editBowl(){
         if (numberOfBowls ==0){
             System.out.println("You haven't selected any bowls. You are being rerouted to choose a different action.");
