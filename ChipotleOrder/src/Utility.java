@@ -36,9 +36,9 @@ public class Utility {
                     editCertainBowl(3);
                     return 5;
                 }
-                else System.out.println("You have not selected 2 bowls, you will be asked to choose a different bowl");
+                else System.out.println("You have not selected 3 bowls, you will be asked to choose a different bowl");
             }
-            misunderstand();
+            else misunderstand();
         }
         return 100;
     }
@@ -346,31 +346,31 @@ public class Utility {
                     bagBowl[num].setTopping1("beans");
                 }
                 else if (input.contains("salsa")){
-                    bagBowl[num].setTopping1("salsa");
+                    bagTaco[num].setTopping1("salsa");
                 }
                 else if (input.contains("guac")){
-                    bagBowl[num].setTopping1("guacamole");
+                    bagTaco[num].setTopping1("guacamole");
                 }
                 else if (input.contains("corn")){
-                    bagBowl[num].setTopping1("corn");
+                    bagTaco[num].setTopping1("corn");
                 }
                 else if (input.contains("sour")){
-                    bagBowl[num].setTopping1("sour cream");
+                    bagTaco[num].setTopping1("sour cream");
                 }
                 else if (input.contains("cheese")){
-                    bagBowl[num].setTopping1("cheese");
+                    bagTaco[num].setTopping1("cheese");
                 }
                 else if (input.contains("veggie")){
-                    bagBowl[num].setTopping1("fajita veggies");
+                    bagTaco[num].setTopping1("fajita veggies");
                 }
                 else if (input.contains("lettuce")){
-                    bagBowl[num].setTopping1("lettuce");
+                    bagTaco[num].setTopping1("lettuce");
                 }
                 else if (input.contains("queso")){
-                    bagBowl[num].setTopping1("queso sauce");
+                    bagTaco[num].setTopping1("queso sauce");
                 }
                 else if (input.contains("no")){
-                    bagBowl[num].setTopping1("no topping");
+                    bagTaco[num].setTopping1("no topping");
                 }
                 else System.out.println("you did not choose a valid topping.");
                 System.out.println("Would you like to continue editing this Taco?");
@@ -389,34 +389,34 @@ public class Utility {
                 System.out.println("What would you like to change your topping to? We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping.");
                 input = in.nextLine().toLowerCase();
                 if (input.contains("bean")){
-                    bagBowl[num].setTopping2("beans");
+                    bagTaco[num].setTopping2("beans");
                 }
                 else if (input.contains("salsa")){
-                    bagBowl[num].setTopping2("salsa");
+                    bagTaco[num].setTopping2("salsa");
                 }
                 else if (input.contains("guac")){
-                    bagBowl[num].setTopping2("guacamole");
+                    bagTaco[num].setTopping2("guacamole");
                 }
                 else if (input.contains("corn")){
-                    bagBowl[num].setTopping2("corn");
+                    bagTaco[num].setTopping2("corn");
                 }
                 else if (input.contains("sour")){
-                    bagBowl[num].setTopping2("sour cream");
+                    bagTaco[num].setTopping2("sour cream");
                 }
                 else if (input.contains("cheese")){
-                    bagBowl[num].setTopping2("cheese");
+                    bagTaco[num].setTopping2("cheese");
                 }
                 else if (input.contains("veggie")){
-                    bagBowl[num].setTopping2("fajita veggies");
+                    bagTaco[num].setTopping2("fajita veggies");
                 }
                 else if (input.contains("lettuce")){
-                    bagBowl[num].setTopping2("lettuce");
+                    bagTaco[num].setTopping2("lettuce");
                 }
                 else if (input.contains("queso")){
-                    bagBowl[num].setTopping2("queso sauce");
+                    bagTaco[num].setTopping2("queso sauce");
                 }
                 else if (input.contains("no")){
-                    bagBowl[num].setTopping2("no topping");
+                    bagTaco[num].setTopping2("no topping");
                 }
                 else System.out.println("you did not choose a valid topping.");
                 System.out.println("Would you like to continue editing this Taco?");
@@ -435,34 +435,34 @@ public class Utility {
                 System.out.println("What would you like to change your topping to? We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping.");
                 input = in.nextLine().toLowerCase();
                 if (input.contains("bean")){
-                    bagBowl[num].setTopping3("beans");
+                    bagTaco[num].setTopping3("beans");
                 }
                 else if (input.contains("salsa")){
-                    bagBowl[num].setTopping3("salsa");
+                    bagTaco[num].setTopping3("salsa");
                 }
                 else if (input.contains("guac")){
-                    bagBowl[num].setTopping3("guacamole");
+                    bagTaco[num].setTopping3("guacamole");
                 }
                 else if (input.contains("corn")){
-                    bagBowl[num].setTopping3("corn");
+                    bagTaco[num].setTopping3("corn");
                 }
                 else if (input.contains("sour")){
-                    bagBowl[num].setTopping3("sour cream");
+                    bagTaco[num].setTopping3("sour cream");
                 }
                 else if (input.contains("cheese")){
-                    bagBowl[num].setTopping3("cheese");
+                    bagTaco[num].setTopping3("cheese");
                 }
                 else if (input.contains("veggie")){
-                    bagBowl[num].setTopping3("fajita veggies");
+                    bagTaco[num].setTopping3("fajita veggies");
                 }
                 else if (input.contains("lettuce")){
-                    bagBowl[num].setTopping3("lettuce");
+                    bagTaco[num].setTopping3("lettuce");
                 }
                 else if (input.contains("queso")){
-                    bagBowl[num].setTopping3("queso sauce");
+                    bagTaco[num].setTopping3("queso sauce");
                 }
                 else if (input.contains("no")){
-                    bagBowl[num].setTopping3("no topping");
+                    bagTaco[num].setTopping3("no topping");
                 }
                 else System.out.println("you did not choose a valid topping.");
                 System.out.println("Would you like to continue editing this Taco?");
@@ -481,34 +481,34 @@ public class Utility {
                 System.out.println("What would you like to change your topping to? We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping.");
                 input = in.nextLine().toLowerCase();
                 if (input.contains("bean")){
-                    bagBowl[num].setTopping4("beans");
+                    bagTaco[num].setTopping4("beans");
                 }
                 else if (input.contains("salsa")){
-                    bagBowl[num].setTopping4("salsa");
+                    bagTaco[num].setTopping4("salsa");
                 }
                 else if (input.contains("guac")){
-                    bagBowl[num].setTopping4("guacamole");
+                    bagTaco[num].setTopping4("guacamole");
                 }
                 else if (input.contains("corn")){
-                    bagBowl[num].setTopping4("corn");
+                    bagTaco[num].setTopping4("corn");
                 }
                 else if (input.contains("sour")){
-                    bagBowl[num].setTopping4("sour cream");
+                    bagTaco[num].setTopping4("sour cream");
                 }
                 else if (input.contains("cheese")){
-                    bagBowl[num].setTopping4("cheese");
+                    bagTaco[num].setTopping4("cheese");
                 }
                 else if (input.contains("veggie")){
-                    bagBowl[num].setTopping4("fajita veggies");
+                    bagTaco[num].setTopping4("fajita veggies");
                 }
                 else if (input.contains("lettuce")){
-                    bagBowl[num].setTopping4("lettuce");
+                    bagTaco[num].setTopping4("lettuce");
                 }
                 else if (input.contains("queso")){
-                    bagBowl[num].setTopping4("queso sauce");
+                    bagTaco[num].setTopping4("queso sauce");
                 }
                 else if (input.contains("no")){
-                    bagBowl[num].setTopping4("no topping");
+                    bagTaco[num].setTopping4("no topping");
                 }
                 else System.out.println("you did not choose a valid topping.");
                 System.out.println("Would you like to continue editing this Taco?");
@@ -527,34 +527,34 @@ public class Utility {
                 System.out.println("What would you like to change your topping to? We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping.");
                 input = in.nextLine().toLowerCase();
                 if (input.contains("bean")){
-                    bagBowl[num].setTopping5("beans");
+                    bagTaco[num].setTopping5("beans");
                 }
                 else if (input.contains("salsa")){
-                    bagBowl[num].setTopping5("salsa");
+                    bagTaco[num].setTopping5("salsa");
                 }
                 else if (input.contains("guac")){
-                    bagBowl[num].setTopping5("guacamole");
+                    bagTaco[num].setTopping5("guacamole");
                 }
                 else if (input.contains("corn")){
-                    bagBowl[num].setTopping5("corn");
+                    bagTaco[num].setTopping5("corn");
                 }
                 else if (input.contains("sour")){
-                    bagBowl[num].setTopping5("sour cream");
+                    bagTaco[num].setTopping5("sour cream");
                 }
                 else if (input.contains("cheese")){
-                    bagBowl[num].setTopping5("cheese");
+                    bagTaco[num].setTopping5("cheese");
                 }
                 else if (input.contains("veggie")){
-                    bagBowl[num].setTopping5("fajita veggies");
+                    bagTaco[num].setTopping5("fajita veggies");
                 }
                 else if (input.contains("lettuce")){
-                    bagBowl[num].setTopping5("lettuce");
+                    bagTaco[num].setTopping5("lettuce");
                 }
                 else if (input.contains("queso")){
-                    bagBowl[num].setTopping5("queso sauce");
+                    bagTaco[num].setTopping5("queso sauce");
                 }
                 else if (input.contains("no")){
-                    bagBowl[num].setTopping5("no topping");
+                    bagTaco[num].setTopping5("no topping");
                 }
                 else System.out.println("you did not choose a valid topping.");
                 System.out.println("Would you like to continue editing this Taco?");
@@ -597,14 +597,307 @@ public class Utility {
                     editCertainTaco(3);
                     return 5;
                 }
-                else System.out.println("You have not selected 2 tacos, you will be asked to choose a different tacos");
+                else System.out.println("You have not selected 3 tacos, you will be asked to choose a different tacos");
             }
-            misunderstand();
+            else misunderstand();
         }
         return 100;
     }
     public static int editBurrito(){
+        if (numberOfBurritos ==0){
+            System.out.println("You haven't selected any burritos. You are being rerouted to choose a different action.");
+            return 5;
+        }
+        int done = 0;
+        while (done !=100){
+            System.out.println("You currently have " + numberOfBurritos + " burritos. which would you like to edit? 1, 2, or 3.");
+            input = in.nextLine().toLowerCase();
+            if (input.indexOf("1") != -1 || input.indexOf("first") != -1){
+                editCertainBurrito(1);
+                return 5;
+            }
+            else if (input.indexOf("2") != -1|| input.indexOf("second") != -1){
+                if (numberOfBowls>1){
+                    editCertainBurrito(2);
+                    return 5;
+                }
+                else System.out.println("You have not selected 2 burritos, you will be asked to choose a different burrito");
+            }
+            else if (input.indexOf("3") != -1|| input.indexOf("third") != -1){
+                if (numberOfBowls>2){
+                    editCertainBurrito(3);
+                    return 5;
+                }
+                else System.out.println("You have not selected 3 burritos, you will be asked to choose a different burrito");
+            }
+            else misunderstand();
+        }
         return 100;
+    }
+    public static void editCertainBurrito(int number){
+        int done = 0;
+        int num = number -1;
+        while (done != 100){
+            System.out.println("This Burrito has " + bagBurrito[num].getMeat() + ", " + bagBurrito[num].getTopping1() + ", " + bagBurrito[num].getTopping2() + ", " + bagBurrito[num].getTopping3() + ", " + bagBurrito[num].getTopping4() + ", and " + bagBurrito[num].getTopping5());
+            System.out.println("What would you like to edit? Meat, topping 1, 2, 3, 4, or 5?");
+            input = in.nextLine().toLowerCase();
+            if (input.contains("meat")){
+                System.out.println("what would you like to change your meat to? We have chicken, beef, or pork");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("chicken")){
+                    bagBurrito[num].setMeat("chicken");
+                }
+                else if (input.contains("beef")){
+                    bagBurrito[num].setMeat("beef");
+                }
+                else if (input.contains("pork")){
+                    bagBurrito[num].setMeat("pork");
+                }
+                else System.out.println("you did not pick a valid meat");
+                System.out.println("Would you like to continue editing this Burrito?");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("no")){
+                    done = 100;
+                }
+                else if (input.contains("yes")){
+                }
+                else {
+                    System.out.println("you did not input a valid response so you are being redirected");
+                    done = 100;
+                }
+            }
+            else if (input.contains("1") || input.contains("first")){
+                System.out.println("What would you like to change your topping to? We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping.");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("bean")){
+                    bagBurrito[num].setTopping1("beans");
+                }
+                else if (input.contains("salsa")){
+                    bagBurrito[num].setTopping1("salsa");
+                }
+                else if (input.contains("guac")){
+                    bagBurrito[num].setTopping1("guacamole");
+                }
+                else if (input.contains("corn")){
+                    bagBurrito[num].setTopping1("corn");
+                }
+                else if (input.contains("sour")){
+                    bagBurrito[num].setTopping1("sour cream");
+                }
+                else if (input.contains("cheese")){
+                    bagBurrito[num].setTopping1("cheese");
+                }
+                else if (input.contains("veggie")){
+                    bagBurrito[num].setTopping1("fajita veggies");
+                }
+                else if (input.contains("lettuce")){
+                    bagBurrito[num].setTopping1("lettuce");
+                }
+                else if (input.contains("queso")){
+                    bagBurrito[num].setTopping1("queso sauce");
+                }
+                else if (input.contains("no")){
+                    bagBurrito[num].setTopping1("no topping");
+                }
+                else System.out.println("you did not choose a valid topping.");
+                System.out.println("Would you like to continue editing this Burrito?");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("no")){
+                    done = 100;
+                }
+                else if (input.contains("yes")){
+                }
+                else {
+                    System.out.println("you did not input a valid response so you are being redirected");
+                    done = 100;
+                }
+            }
+            else if (input.contains("2") || input.contains("second")){
+                System.out.println("What would you like to change your topping to? We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping.");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("bean")){
+                    bagBurrito[num].setTopping2("beans");
+                }
+                else if (input.contains("salsa")){
+                    bagBurrito[num].setTopping2("salsa");
+                }
+                else if (input.contains("guac")){
+                    bagBurrito[num].setTopping2("guacamole");
+                }
+                else if (input.contains("corn")){
+                    bagBurrito[num].setTopping2("corn");
+                }
+                else if (input.contains("sour")){
+                    bagBurrito[num].setTopping2("sour cream");
+                }
+                else if (input.contains("cheese")){
+                    bagBurrito[num].setTopping2("cheese");
+                }
+                else if (input.contains("veggie")){
+                    bagBurrito[num].setTopping2("fajita veggies");
+                }
+                else if (input.contains("lettuce")){
+                    bagBurrito[num].setTopping2("lettuce");
+                }
+                else if (input.contains("queso")){
+                    bagBurrito[num].setTopping2("queso sauce");
+                }
+                else if (input.contains("no")){
+                    bagBurrito[num].setTopping2("no topping");
+                }
+                else System.out.println("you did not choose a valid topping.");
+                System.out.println("Would you like to continue editing this Burrito?");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("no")){
+                    done = 100;
+                }
+                else if (input.contains("yes")){
+                }
+                else {
+                    System.out.println("you did not input a valid response so you are being redirected");
+                    done = 100;
+                }
+            }
+            else if (input.contains("3") || input.contains("third")){
+                System.out.println("What would you like to change your topping to? We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping.");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("bean")){
+                    bagBurrito[num].setTopping3("beans");
+                }
+                else if (input.contains("salsa")){
+                    bagBurrito[num].setTopping3("salsa");
+                }
+                else if (input.contains("guac")){
+                    bagBurrito[num].setTopping3("guacamole");
+                }
+                else if (input.contains("corn")){
+                    bagBurrito[num].setTopping3("corn");
+                }
+                else if (input.contains("sour")){
+                    bagBurrito[num].setTopping3("sour cream");
+                }
+                else if (input.contains("cheese")){
+                    bagBurrito[num].setTopping3("cheese");
+                }
+                else if (input.contains("veggie")){
+                    bagBurrito[num].setTopping3("fajita veggies");
+                }
+                else if (input.contains("lettuce")){
+                    bagBurrito[num].setTopping3("lettuce");
+                }
+                else if (input.contains("queso")){
+                    bagBurrito[num].setTopping3("queso sauce");
+                }
+                else if (input.contains("no")){
+                    bagBurrito[num].setTopping3("no topping");
+                }
+                else System.out.println("you did not choose a valid topping.");
+                System.out.println("Would you like to continue editing this Burrito?");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("no")){
+                    done = 100;
+                }
+                else if (input.contains("yes")){
+                }
+                else {
+                    System.out.println("you did not input a valid response so you are being redirected");
+                    done = 100;
+                }
+            }
+            else if (input.contains("4") || input.contains("fourth")){
+                System.out.println("What would you like to change your topping to? We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping.");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("bean")){
+                    bagBurrito[num].setTopping4("beans");
+                }
+                else if (input.contains("salsa")){
+                    bagBurrito[num].setTopping4("salsa");
+                }
+                else if (input.contains("guac")){
+                    bagBurrito[num].setTopping4("guacamole");
+                }
+                else if (input.contains("corn")){
+                    bagBurrito[num].setTopping4("corn");
+                }
+                else if (input.contains("sour")){
+                    bagBurrito[num].setTopping4("sour cream");
+                }
+                else if (input.contains("cheese")){
+                    bagBurrito[num].setTopping4("cheese");
+                }
+                else if (input.contains("veggie")){
+                    bagBurrito[num].setTopping4("fajita veggies");
+                }
+                else if (input.contains("lettuce")){
+                    bagBurrito[num].setTopping4("lettuce");
+                }
+                else if (input.contains("queso")){
+                    bagBurrito[num].setTopping4("queso sauce");
+                }
+                else if (input.contains("no")){
+                    bagBurrito[num].setTopping4("no topping");
+                }
+                else System.out.println("you did not choose a valid topping.");
+                System.out.println("Would you like to continue editing this Burrito?");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("no")){
+                    done = 100;
+                }
+                else if (input.contains("yes")){
+                }
+                else {
+                    System.out.println("you did not input a valid response so you are being redirected");
+                    done = 100;
+                }
+            }
+            else if (input.contains("5") || input.contains("fifth")){
+                System.out.println("What would you like to change your topping to? We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping.");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("bean")){
+                    bagBowl[num].setTopping5("beans");
+                }
+                else if (input.contains("salsa")){
+                    bagBurrito[num].setTopping5("salsa");
+                }
+                else if (input.contains("guac")){
+                    bagBurrito[num].setTopping5("guacamole");
+                }
+                else if (input.contains("corn")){
+                    bagBurrito[num].setTopping5("corn");
+                }
+                else if (input.contains("sour")){
+                    bagBurrito[num].setTopping5("sour cream");
+                }
+                else if (input.contains("cheese")){
+                    bagBurrito[num].setTopping5("cheese");
+                }
+                else if (input.contains("veggie")){
+                    bagBurrito[num].setTopping5("fajita veggies");
+                }
+                else if (input.contains("lettuce")){
+                    bagBurrito[num].setTopping5("lettuce");
+                }
+                else if (input.contains("queso")){
+                    bagBurrito[num].setTopping5("queso sauce");
+                }
+                else if (input.contains("no")){
+                    bagBurrito[num].setTopping5("no topping");
+                }
+                else System.out.println("you did not choose a valid topping.");
+                System.out.println("Would you like to continue editing this Burrito?");
+                input = in.nextLine().toLowerCase();
+                if (input.contains("no")){
+                    done = 100;
+                }
+                else if (input.contains("yes")){
+                }
+                else {
+                    System.out.println("you did not input a valid response so you are being redirected");
+                    done = 100;
+                }
+            }
+            else misunderstand();
+        }
     }
     public static int editWhatType(){
         int done = 0;
