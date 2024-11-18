@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class ETACalculator {
 
     // Replace with your Google Maps API key
-    private static final String API_KEY = "AIzaSyCI6ox5b_GNUPbk4QuRud46B2UZCuLhtOc";
+    private static final String API_KEY = "";
 
     // Method to get coordinates (latitude and longitude) from an address
     public static JsonObject getCoordinatesFromAddress(String address) throws IOException {
