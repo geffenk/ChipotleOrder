@@ -18,7 +18,7 @@ public class Utility {
     public static int inputName(){
         System.out.println("We need a name for the order. What is your name?");
         name = in.nextLine();
-        return 20;
+        return 12;
     }
     public static int doYouWantToPlace(){
         System.out.println("You have currently selected " + numberOfBowls + " bowls, " + numberOfBurritos + " burritos, " + numberOfTacos + " Tacos. Would you like to place your order?");

@@ -38,16 +38,13 @@ public class App {
             if (pos == 8){
                 pos = Utility.doYouWantToPlace();
             }
+            if (pos == 12){
+                pos = EtaCalculator.restaurantETA();
+            }
             if (pos ==15){
                 pos = Utility.inputName();
             }
-            if (pos == 20){
-                pos = Utility.getLocation();
-            }
-
         }
-        
     }
-    
 }
 //test test
