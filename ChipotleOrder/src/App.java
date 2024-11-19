@@ -40,6 +40,7 @@ public class App {
             }
             if (pos == 12){
                 pos = EtaCalculator.restaurantETA();
+                pos=100;
             }
             if (pos ==15){
                 pos = Utility.inputName();
