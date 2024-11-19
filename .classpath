@@ -8,6 +8,7 @@
     <classpathentry kind="lib" path="libs/httpclient-4.5.14.jar"/>
     <classpathentry kind="lib" path="libs/httpcore-4.4.16.jar"/>
     <classpathentry kind="lib" path="libs/commons-logging-1.3.4.jar"/>
+    <classpathentry kind="lib" path="libs/dotenv-java-3.0.2.jar"/>
 
     <!-- Output folder for compiled classes -->
     <classpathentry kind="output" path="bin"/>

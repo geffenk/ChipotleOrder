@@ -1,6 +1,9 @@
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+
+import io.github.cdimascio.dotenv.Dotenv;
+
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -12,12 +15,14 @@ import java.net.URLEncoder;
 import java.util.Scanner;
 
 public class ETACalculator {
+    private static Dotenv dotenv = Dotenv.load();
 
     // Replace with your Google Maps API key
-    private static final String API_KEY = "";
+    private static final String API_KEY = dotenv.get("GOOGLE_API_KEY");
 
     // Method to get coordinates (latitude and longitude) from an address
     public static JsonObject getCoordinatesFromAddress(String address) throws IOException {
+        
         String encodedAddress = URLEncoder.encode(address, "UTF-8");
         String url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + encodedAddress + "&key=" + API_KEY;
 
