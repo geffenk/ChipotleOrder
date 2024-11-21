@@ -11,7 +11,7 @@ public class Utility {
     public static Taco[] bagTaco = new Taco[3];
     public static Burrito[] bagBurrito = new Burrito[3];
     public static String  name = "";
-    
+
     public static int inputName(){
         System.out.println("We need a name for the order. What is your name?");
         name = in.nextLine();
@@ -962,7 +962,7 @@ public class Utility {
         return 100;
     }
     public static int whatNext(){
-        System.out.println("You currently have selected " + numberOfBowls + " Bowls, " + numberOfTacos + " Tacos, and " + numberOfBurritos+ " Burritos.");
+        System.out.println("You currently have selected " + numberOfBowls + " Bowls, " + numberOfTacos + " Tacos, and " + numberOfBurritos+ " Burritos."+"\n");
         int done = 0;
         while (done != 100){
             System.out.println("What would you like to do next? Order a new burrito, taco, or bowl? Edit one you already have selected? Or place your order? Type \"new\" for a new item, \"edit\" to edit an item, or \"place\" to place your order");
@@ -992,11 +992,11 @@ public class Utility {
         String fifthTopping = "";
         String meat = "";
         if (numberOfBowls >2){
-            System.out.println("You have already selected 3 bowls. You are fat enough. You are being redirected to do another action.");
+            System.out.println("You have already selected 3 bowls. You are fat enough. You are being redirected to do another action."+"\n");
             return 5;
         }
         while (done!=50){
-            System.out.println("What meat would you like on your Bowl? We have chicken, steak, and pork. You are only allowed one meat.");
+            System.out.println("What meat would you like on your Bowl? We have chicken, steak, and pork. You are only allowed one meat."+"\n");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1235,10 +1235,10 @@ public class Utility {
             }
             else misunderstand();
         }
-        System.out.println("You have chosen " + fifthTopping + " as your final topping.");
+        System.out.println("You have chosen " + fifthTopping + " as your final topping."+"\n");
         bagBowl[numberOfBowls] = new Bowl(meat, firstTopping, secondTopping, thirdTopping, fourthTopping, fifthTopping);
         numberOfBowls++;
-        System.out.println("You have selected a bowl with " + meat + ", " + firstTopping + ", " + secondTopping + ", " + thirdTopping+ ", " + fourthTopping + ", and " + fifthTopping);
+        System.out.println("You have selected a bowl with " + meat + ", " + firstTopping + ", " + secondTopping + ", " + thirdTopping+ ", " + fourthTopping + ", and " + fifthTopping+"\n");
         return 5;
     }
     public static int createTaco(){
@@ -1250,7 +1250,7 @@ public class Utility {
         String fifthTopping = "";
         String meat = "";
         if (numberOfTacos >2){
-            System.out.println("You have already selected 3 tacos. You are fat enough. You are being redirected to do another action.");
+            System.out.println("You have already selected 3 tacos. You are fat enough. You are being redirected to do another action."+"\n");
             return 5;
         }
         while (done!=50){
@@ -1493,10 +1493,10 @@ public class Utility {
             }
             else misunderstand();
         }
-        System.out.println("You have chosen " + fifthTopping + " as your final topping.");
+        System.out.println("You have chosen " + fifthTopping + " as your final topping."+"\n");
         bagTaco[numberOfTacos] = new Taco(meat, firstTopping, secondTopping, thirdTopping, fourthTopping, fifthTopping);
         numberOfTacos++;
-        System.out.println("You have selected a Taco with " + meat + ", " + firstTopping + ", " + secondTopping + ", " + thirdTopping+ ", " + fourthTopping + ", and " + fifthTopping);
+        System.out.println("You have selected a Taco with " + meat + ", " + firstTopping + ", " + secondTopping + ", " + thirdTopping+ ", " + fourthTopping + ", and " + fifthTopping+"\n");
         return 5;
     }
     public static int createBurrito(){
@@ -1508,7 +1508,7 @@ public class Utility {
         String fifthTopping = "";
         String meat = "";
         if (numberOfBurritos >2){
-            System.out.println("You have already selected 3 burritos. You are fat enough. You are being redirected to do another action.");
+            System.out.println("You have already selected 3 burritos. You are fat enough. You are being redirected to do another action."+"\n");
             return 5;
         }
         while (done!=50){
@@ -1532,7 +1532,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=0){
-            System.out.println("You have chose " + meat + ". You get five toppings on your burrito. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings. What would you like for your first topping?");
+            System.out.println("You have chose " + meat + ". You get five toppings on your burrito. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings. What would you like for your first topping?"+"\n");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1751,17 +1751,20 @@ public class Utility {
             }
             else misunderstand();
         }
-        System.out.println("You have chosen " + fifthTopping + " as your final topping.");
+        System.out.println("You have chosen " + fifthTopping + " as your final topping."+"\n");
         bagBurrito[numberOfBurritos] = new Burrito(meat, firstTopping, secondTopping, thirdTopping, fourthTopping, fifthTopping);
         numberOfBurritos++;
-        System.out.println("You have selected a burrito with " + meat + ", " + firstTopping + ", " + secondTopping + ", " + thirdTopping+ ", " + fourthTopping + ", and " + fifthTopping);
+        System.out.println("You have selected a burrito with " + meat + ", " + firstTopping + ", " + secondTopping + ", " + thirdTopping+ ", " + fourthTopping + ", and " + fifthTopping+"\n");
         return 5;
     }
     public static int startOrder(){
-        System.out.println("We have created a new order for you. We offer three menu items: Burritos, Tacos, and Bowls. Which would you like to order first?");
+        System.out.println("We have created a new order for you. We offer three menu items: Burritos, Tacos, and Bowls. Which would you like to order first?" + "\n");
         input = in.nextLine().toLowerCase();
         if (input.indexOf("end")!= -1){
             return 100;
+        }
+        else if (input.indexOf("burrito bowl") != -1){
+            return 4;
         }
         else if (input.indexOf("burrito") != -1 || input.indexOf("burritos") != -1){
             return 2;
@@ -1776,7 +1779,7 @@ public class Utility {
         return 1;
     }
     public static int wantToOrder(){
-        System.out.println("Welcome to Chipotle Online Order Software! Would you like to place an order with us? At any time type \"end\" to stop the conversation");
+        System.out.println("Welcome to Chipotle Online Order Software! Would you like to place an order with us? At any time type \"end\" to stop the conversation"+"\n");
         input = in.nextLine().toLowerCase();
         if ((input.indexOf("end") == -1) && (input.indexOf("yes")!=-1 || input.indexOf("sure") != -1 || input.indexOf("yea") != -1)){
             return 1;
@@ -1790,13 +1793,13 @@ public class Utility {
     }
     public static void misunderstand(){
         if(posOfMisunderstand%3 == 0){
-            System.out.println("I'm sorry, I don't understand. Please clarify");
+            System.out.println("I'm sorry, I don't understand. Please clarify"+"\n");
         }
         if(posOfMisunderstand%3 == 1){
-            System.out.println("I didn't get that, please specify");
+            System.out.println("I didn't get that, please specify"+"\n");
         }
         if(posOfMisunderstand%3 == 2){
-            System.out.println("I'm not sure what you are talking about, please change your wording");
+            System.out.println("I'm not sure what you are talking about, please change your wording"+"\n");
         }
         posOfMisunderstand++;
     }
