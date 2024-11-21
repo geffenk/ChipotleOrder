@@ -11,10 +11,7 @@ public class Utility {
     public static Taco[] bagTaco = new Taco[3];
     public static Burrito[] bagBurrito = new Burrito[3];
     public static String  name = "";
-
-    public static int getLocation(){
-        return 100;
-    }
+    
     public static int inputName(){
         System.out.println("We need a name for the order. What is your name?");
         name = in.nextLine();
