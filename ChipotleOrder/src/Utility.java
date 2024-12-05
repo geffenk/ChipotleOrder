@@ -66,7 +66,7 @@ public class Utility {
         int done = 0;
         int num = number -1;
         while (done != 100){
-            System.out.println("This burrito has " + bagBowl[num].getMeat() + ", " + bagBowl[num].getTopping1() + ", " + bagBowl[num].getTopping2() + ", " + bagBowl[num].getTopping3() + ", " + bagBowl[num].getTopping4() + ", and " + bagBowl[num].getTopping5());
+            System.out.println("This bowl has " + bagBowl[num].getMeat() + ", " + bagBowl[num].getTopping1() + ", " + bagBowl[num].getTopping2() + ", " + bagBowl[num].getTopping3() + ", " + bagBowl[num].getTopping4() + ", and " + bagBowl[num].getTopping5());
             System.out.println("What would you like to edit? Meat, topping 1, 2, 3, 4, or 5?");
             input = in.nextLine().toLowerCase();
             if (input.contains("meat")){
@@ -82,7 +82,7 @@ public class Utility {
                     bagBowl[num].setMeat("pork");
                 }
                 else System.out.println("you did not pick a valid meat");
-                System.out.println("Would you like to continue editing this Burrito?");
+                System.out.println("Would you like to continue editing this Bowl?");
                 input = in.nextLine().toLowerCase();
                 if (input.contains("no")){
                     done = 100;
@@ -312,7 +312,7 @@ public class Utility {
                     bagBowl[num].setTopping5("no topping");
                 }
                 else System.out.println("you did not choose a valid topping.");
-                System.out.println("Would you like to continue editing this Burrito?");
+                System.out.println("Would you like to continue editing this Bowl?");
                 input = in.nextLine().toLowerCase();
                 if (input.contains("no")){
                     done = 100;
