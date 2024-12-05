@@ -1016,7 +1016,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=0){
-            System.out.println("You have chose " + meat + ". You get five toppings on your bowl. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings. What would you like for your first topping?");
+            System.out.println("You have chose " + meat + ". You get five toppings on your bowl. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings. What would you like for your first topping?");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1060,7 +1060,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=10){
-            System.out.println("You have chose " + firstTopping + ". Now for your second topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + firstTopping + ". Now for your second topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1104,7 +1104,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=20){
-            System.out.println("You have chose " + secondTopping + ". Now for your third topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + secondTopping + ". Now for your third topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1148,7 +1148,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=0){
-            System.out.println("You have chose " + thirdTopping + ". Now for your fourth topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + thirdTopping + ". Now for your fourth topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1192,7 +1192,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=10){
-            System.out.println("You have chose " + fourthTopping + ". Now for your fifth and final topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + fourthTopping + ". Now for your fifth and final topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1274,7 +1274,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=0){
-            System.out.println("You have chose " + meat + ". You get five toppings on your Taco. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings. What would you like for your first topping?");
+            System.out.println("You have chose " + meat + ". You get five toppings on your Taco. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings. What would you like for your first topping?");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1318,7 +1318,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=10){
-            System.out.println("You have chose " + firstTopping + ". Now for your second topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + firstTopping + ". Now for your second topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1362,7 +1362,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=20){
-            System.out.println("You have chose " + secondTopping + ". Now for your third topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + secondTopping + ". Now for your third topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1406,7 +1406,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=0){
-            System.out.println("You have chose " + thirdTopping + ". Now for your fourth topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + thirdTopping + ". Now for your fourth topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1450,7 +1450,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=10){
-            System.out.println("You have chose " + fourthTopping + ". Now for your fifth and final topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + fourthTopping + ". Now for your fifth and final topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1532,7 +1532,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=0){
-            System.out.println("You have chose " + meat + ". You get five toppings on your burrito. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings. What would you like for your first topping?"+"\n");
+            System.out.println("You have chose " + meat + ". You get five toppings on your burrito. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings. What would you like for your first topping?"+"\n");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1576,7 +1576,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=10){
-            System.out.println("You have chose " + firstTopping + ". Now for your second topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + firstTopping + ". Now for your second topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1620,7 +1620,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=20){
-            System.out.println("You have chose " + secondTopping + ". Now for your third topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + secondTopping + ". Now for your third topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1664,7 +1664,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=0){
-            System.out.println("You have chose " + thirdTopping + ". Now for your fourth topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + thirdTopping + ". Now for your fourth topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
@@ -1708,7 +1708,7 @@ public class Utility {
             else misunderstand();
         }
         while (done!=10){
-            System.out.println("You have chose " + fourthTopping + ". Now for your fifth and final topping. We have beans, salsa, guacamole, corn, sour cream, cheese, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
+            System.out.println("You have chose " + fourthTopping + ". Now for your fifth and final topping. We have beans, salsa, guacamole, corn, sour cream, lettuce, fajita veggies, queso sauce, or the option of no topping. You may repeat toppings.");
             input = in.nextLine().toLowerCase();
             if (input.indexOf("end") > -1){
                 return 100;
