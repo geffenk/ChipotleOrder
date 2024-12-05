@@ -128,7 +128,7 @@ public class Utility {
                     bagBowl[num].setTopping1("no topping");
                 }
                 else System.out.println("you did not choose a valid topping.");
-                System.out.println("Would you like to continue editing this Burrito?");
+                System.out.println("Would you like to continue editing this Bowl?");
                 input = in.nextLine().toLowerCase();
                 if (input.contains("no")){
                     done = 100;
@@ -174,7 +174,7 @@ public class Utility {
                     bagBowl[num].setTopping2("no topping");
                 }
                 else System.out.println("you did not choose a valid topping.");
-                System.out.println("Would you like to continue editing this Burrito?");
+                System.out.println("Would you like to continue editing this Bowl?");
                 input = in.nextLine().toLowerCase();
                 if (input.contains("no")){
                     done = 100;
@@ -220,7 +220,7 @@ public class Utility {
                     bagBowl[num].setTopping3("no topping");
                 }
                 else System.out.println("you did not choose a valid topping.");
-                System.out.println("Would you like to continue editing this Burrito?");
+                System.out.println("Would you like to continue editing this Bowl?");
                 input = in.nextLine().toLowerCase();
                 if (input.contains("no")){
                     done = 100;
@@ -266,7 +266,7 @@ public class Utility {
                     bagBowl[num].setTopping4("no topping");
                 }
                 else System.out.println("you did not choose a valid topping.");
-                System.out.println("Would you like to continue editing this Burrito?");
+                System.out.println("Would you like to continue editing this Bowl?");
                 input = in.nextLine().toLowerCase();
                 if (input.contains("no")){
                     done = 100;
